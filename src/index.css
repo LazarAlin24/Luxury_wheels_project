@@ -1,0 +1,10 @@
+*{margin: 0;
+
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customHight{
+    height: calc(100vh - 300px);
+}

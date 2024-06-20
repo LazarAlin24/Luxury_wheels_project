@@ -1,0 +1,19 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Adjust height automatically based on content */
+}
+
+@media (max-width: 768px) {
+    .popular {
+        min-height: 400px; /* Minimum height for smaller screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .popular {
+        min-height: 500px; /* Minimum height for larger screens */
+    }
+}
