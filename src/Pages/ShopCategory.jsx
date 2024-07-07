@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import "../Pages/CSS/ShopCategory.css";
 import { ShopContext } from "../Context/ShopContext";
-import dropdown_icon from "../Components/Assets/dropdown_icon.png";
 import Item from "../Components/Item/Item";
 import "./CSS/ShopCategory.css";
 
@@ -10,7 +9,7 @@ const ShopCategory = (prop) => {
 
   return (
     <div className="shop-category">
-      <div className="g-no-repeat bg-center m-2 shadow-lg rounded-full flex items-center justify-items-center size-48 md:size-full">
+      <div className="category-header">
         <img
           decoding="async"
           src={
@@ -19,17 +18,8 @@ const ShopCategory = (prop) => {
               : "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTRsdm83ZXAxcnI2Nms4NWMzdHk4c2wweGU0Mzdub3NocnB5OW9vZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kiY19eeBn77hwuYtnu/giphy.webp"
           }
           alt="Rotiform Wheels"
-          className="object-contain rounded-full "
+          className="category-image"
         />
-        <p className="text-lg">Choose your product</p>
-      </div>
-      <div className="shopcategory-indexSort">
-        <p>
-          <span></span>
-        </p>
-        <div className="shopcategory-sort bg-red-600 text-white">
-          Sort by <img src={dropdown_icon} alt="Sort Dropdown" />
-        </div>
       </div>
       <div
         className="max-w-9xl mx-auto justify-items-center grid grid-cols-1 

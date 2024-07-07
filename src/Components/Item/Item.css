@@ -1,8 +1,12 @@
 .item{
-    width: 300px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
    }
 .item p{
-    margin: 0px 0px;
+    margin: 0px 55px;
 }
 .item-prices{
     display:flex;

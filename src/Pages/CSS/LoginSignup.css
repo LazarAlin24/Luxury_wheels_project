@@ -1,0 +1,105 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    width: 100vw;
+   
+}
+
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1936px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Style the form container */
+.form-container {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin-left: 350px;
+}
+
+/* Style the title */
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the input fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the button */
+.form-container button {
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    background:black;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container button:hover {
+    background-color: red;
+}
+
+/* Style the checkbox container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the checkbox */
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Style the terms text */
+.checkbox-container p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Style the login link */
+.form-container p span {
+    color: red;
+    cursor: pointer;
+}
+
+.form-container p span:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+}

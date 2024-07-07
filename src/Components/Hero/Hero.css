@@ -1,0 +1,31 @@
+.hero-container {
+    position: relative;
+    height: 75vh;
+    background-image: url('https://newsroom.etomato.com/userfiles/%5B%EB%9E%8C%EB%B3%B4%EB%A5%B4%EA%B8%B0%EB%8B%88%5D%20%EC%9A%B0%EB%9D%BC%EC%B9%B8%20%EC%97%90%EB%B3%B4%20(1).jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .text-content {
+    max-width: 900px;
+    padding: 1px;
+    border-radius: 10px;
+  }
+  
+  .carousel-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 58%;
+  }
+  

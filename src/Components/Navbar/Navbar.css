@@ -29,6 +29,7 @@
     font-size: 20px;
     font-weight: 600;
     color: white;
+   
 }
 
 .nav-menu li {
@@ -39,6 +40,7 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    padding-right: 12px;
 }
 
 .nav-menu hr{
@@ -53,7 +55,8 @@
     display:flex;
     align-items: center;
     height: auto;
-    gap: 45px;
+    gap: 35px;
+    
    
     
 }
@@ -65,7 +68,7 @@
     border: 1px solid #7a7a7a;
     border-radius: 75px;
     color: #fff; /* Change text color to white */
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     background: white;
     cursor: pointer;
@@ -78,17 +81,19 @@
 }
 
 .nav-cart-count{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
+    margin-top: -25px;
+    margin-left: -45px;
+    border-radius: 13px;
+    font-size: 13px;
     background: red;
     color: white;
+    
+    
 }
 .nav-menu a {
     color: white; 

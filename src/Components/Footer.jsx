@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="p-1 footer footer-center bottom-0 bg-black text-base-content  position: flex-end ">
+    <footer className="p-1 footer footer-center bottom-0 bg-black text-base-content position: relative; ">
       <nav>
         <div className="grid grid-flow-col gap-4 mb-3">
           <button className="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-200 group transition-all duration-300">

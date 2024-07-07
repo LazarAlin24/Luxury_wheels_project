@@ -1,0 +1,277 @@
+.cart-container {
+  width: 95%;
+  height:83vh;
+  margin:auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.cart-header, .cart-item {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.cart-header {
+  font-weight: bold;
+  background-color: #ddd;
+  border-radius: 20px;
+  
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 75px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cart-product p {
+  margin: 0;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background-color: #f0f0f0;
+}
+
+.quantity {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+.remove-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: red;
+}
+
+.cartitems-down {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.cartitems-total {
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button_buy {
+  width: 35%;
+  margin-top: 20px;
+  padding: 10px;
+  background: black;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button_buy:hover {
+  background-color: red;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .cart-header, .cart-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .cart-product {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .quantity-control {
+    margin-top: 10px;
+  }
+
+  .remove-button {
+    margin-top: 10px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+  }
+
+  .cartitems-total {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-header, .cart-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .cart-product {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .quantity-control {
+    margin-top: 10px;
+  }
+
+  .remove-button {
+    margin-top: 10px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+  }
+
+  .cartitems-total {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .product-image {
+    width: 50px;
+  }
+  .cart-header {
+    display: none; 
+  }
+}
+.empty-cart-message {
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .cart-header {
+    display: none;
+  }
+
+  .cart-header, .cart-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .cart-product {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .quantity-control {
+    margin-top: 10px;
+  }
+
+  .remove-button {
+    margin-top: 10px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+  }
+
+  .cartitems-total {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-header {
+    display: none;
+  }
+
+  .cart-header, .cart-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .cart-product {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .quantity-control {
+    margin-top: 10px;
+  }
+
+  .remove-button {
+    margin-top: 10px;
+  }
+
+  .cartitems-down {
+    flex-direction: column;
+  }
+
+  .cartitems-total {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .product-image {
+    width: 50px;
+  }
+  
+  .cart-header {
+    display: none; 
+  }
+}

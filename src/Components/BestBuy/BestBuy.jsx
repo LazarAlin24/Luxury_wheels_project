@@ -1,14 +1,13 @@
-import "./Popular.css";
+import "./BestBuy.css";
 import data_product from "../Assets/data";
 import Item from "../Item/Item";
 
-const Popular = () => {
+const BestBuy = () => {
   return (
     <div className="flex flex-col items-center p-1 h-auto">
       <h1 className="text-black text-sm md:text-2xl text-center font-bold">
         BEST BUY
       </h1>
-      <hr className="w-full my-0" />
       <div className="flex flex-wrap justify-center items-center space-x-2 gap-4 ">
         {data_product.map((item, i) => (
           <Item
@@ -26,4 +25,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default BestBuy;
